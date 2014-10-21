@@ -15,8 +15,9 @@ function sample_viewport_meta_tag() {
 	echo '<meta name="viewport" content="width=device-width, initial-scale=1.0"/>';
 }
 
-/** Add support for custom header */
+// Remove genesis header and footer for this theme
 remove_action('genesis_header','genesis_do_header');
+remove_action( 'genesis_footer', 'genesis_do_footer' );
 
 /*function injectHeader(){ ?>
 <div id="title-area">
@@ -26,4 +27,6 @@ remove_action('genesis_header','genesis_do_header');
 add_action('genesis_header','injectHeader');
 */
 
-remove_action( 'genesis_footer', 'genesis_do_footer' );
+//Put sidebar before content so that it can appear on top for mobile devices
+remove_action( 'genesis_after_content', 'genesis_get_sidebar' );
+add_action( 'genesis_before_content', 'genesis_get_sidebar' );

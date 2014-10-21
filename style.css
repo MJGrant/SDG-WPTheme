@@ -370,8 +370,6 @@ h2 a {
 #inner {
 	clear: both;
 	overflow: hidden;
-	padding-top: 40px;
-	padding-top: 2.5rem;
 }
 
 /* 04b - 1152px CSS Grid ----------- */
@@ -1017,9 +1015,9 @@ label {
 .sidebar {
 	display: inline;
 	line-height: 1.5;
-	position:fixed;
 	width:30%;
 	max-width:30%;
+	text-align:center;
 }
 
 .sidebar p {
@@ -1219,6 +1217,7 @@ video {
 
 img {
 	height: auto;
+	max-width:100%;
 }
 
 .alignleft .avatar {
@@ -1291,7 +1290,23 @@ p.wp-caption-text {
 
 	#wrap {
 		max-width: 960px;
-	}	
+	}
+
+	.sidebar {
+		float:none;
+		width:100%;
+		max-width:100%;
+	}
+
+	.sidebar-content #content {
+		width:100%;
+		max-width:100%;
+	}
+
+	#content {
+		width:100%;
+		max-width:100%;
+	}
 
 }
 
