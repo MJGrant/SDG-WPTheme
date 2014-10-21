@@ -26,4 +26,4 @@ remove_action('genesis_header','genesis_do_header');
 add_action('genesis_header','injectHeader');
 */
 
-
+remove_action( 'genesis_footer', 'genesis_do_footer' );
