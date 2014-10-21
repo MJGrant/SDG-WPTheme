@@ -234,6 +234,7 @@ h6,
 #title {
 	font-family: 'Open Sans', sans-serif;
 	color:#2c3e50;
+	text-transform:uppercase;
 }
 
 /* 03c - Font Size ----------- */
@@ -498,7 +499,7 @@ h2 a {
 	margin-bottom: 80px;
 	margin-bottom: 5rem;
 	background-color:#fff;
-	padding:20px;
+	padding:50px;
 }
 
 .single .entry {
@@ -512,7 +513,6 @@ h2 a {
 
 .entry-content {
 	overflow: hidden;
-	padding:0px 40px;
 }
 
 .entry-content,
@@ -1027,10 +1027,6 @@ label {
 }
 
 .sidebar .widget {
-	margin-bottom: 32px;
-	margin-bottom: 2rem;
-	padding-bottom: 32px;
-	padding-bottom: 2rem;
 	overflow: hidden;
 	color:#6d6d6d;
 }
@@ -1042,14 +1038,18 @@ h4.widgettitle {
 
 
 .sidebar .widget a {
+	font-family:'Open Sans', sans-serif;
 	color:#ffb603;
 	text-decoration:none;
 	background-color:white;
 	padding:10px;
+	font-weight:bold;
+	font-size:.8em;
 }
 
 .sidebar.widget-area ul li {
 	list-style-type: none;
+	display:inline-block;
 	margin-bottom: 30px;
 	word-wrap: none;
 	padding-left:10px;
@@ -1365,13 +1365,15 @@ p.wp-caption-text {
 #SDGlogo {
 	margin:0 auto;
 	display:block;
-	width:150px;
 }
 
 #SDGlogo a { 
 	background-color:transparent;
 }
 
+#smallLink a {
+	font-size:.6em;
+}
 /* iPhones (portrait and landscape) ----------- */
 
 @media only screen and (max-width: 480px) {
