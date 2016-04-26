@@ -1035,20 +1035,33 @@ h4.widgettitle {
 	padding:5px;
 }
 
+/* 4/25/2016 fixes for widget link styling */
 
-.sidebar .widget a {
-	font-family:'Open Sans', sans-serif;
-	color:#ffb603;
-	text-decoration:none;
+#menu-navigationbar a {
 	background-color:white;
+	color:#ffb603;
 	padding:10px;
 	font-weight:bold;
 	font-size:.8em;
 }
 
-.sidebar .widget a:hover {
+#menu-navigationbar a:hover {
 	color:#fff;
 	background-color:#ffb603;
+}
+
+/* for "recent posts" and other widgets */
+.sidebar .widget a {
+	font-family:'Open Sans', sans-serif;
+	color:#2c3e50;
+	text-decoration:none;
+	padding:10px;
+	font-weight:bold;
+	font-size:.6em;
+}
+
+.sidebar .widget a:hover {
+	color:#ffb603;
 }
 
 .sidebar.widget-area ul li {
@@ -1394,7 +1407,15 @@ p.wp-caption-text {
 
 #smallLink a {
 	font-size:.6em;
+	background-color:transparent;
 }
+
+#smallLink a:hover {
+	font-size:.6em;
+	background-color:#ffb603;
+}
+
+
 /* iPhones (portrait and landscape) ----------- */
 
 @media only screen and (max-width: 480px) {
